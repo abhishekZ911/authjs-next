@@ -32,7 +32,7 @@ export default function LoginPage() {
       console.log("login success", response.data);
       toast.success("login success");
       
-      router.push(`/profile/${user.email}`);
+      router.push(`/profile`);
 
     }catch(error: any){
       console.log("Login unsucessful", error.message);
